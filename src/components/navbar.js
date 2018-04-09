@@ -1,33 +1,22 @@
 import React from 'react';
-
+import spainFlag from './images/spainFlag.jpg'
+import usFlag from './images/usFlag.jpg';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 
-export default ()=>{
+export default (props)=>{
     console.log('inside')
+    console.log('Navbar Props', props)
+    let language = props.language
     return(
-        <Navbar inverse collapseOnSelect id='navbar'>
+        <Navbar inverse collapseOnSelect fixedTop id='navbar'>
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="#brand">React-Bootstrap</a>
+      <a href="#brand">Be<small>+</small></a>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
-    <Nav>
-      <NavItem eventKey={1} href="#">
-        Link
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-        Link
-      </NavItem>
-      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-        <MenuItem eventKey={3.1}>Action</MenuItem>
-        <MenuItem eventKey={3.2}>Another action</MenuItem>
-        <MenuItem eventKey={3.3}>Something else here</MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey={3.3}>Separated link</MenuItem>
-      </NavDropdown>
-    </Nav>
+    
     <Nav pullRight>
       <NavItem eventKey={1} href="#">
        About Us
@@ -41,6 +30,15 @@ export default ()=>{
     <NavItem eventKey={2} href="#">
       Contact
     </NavItem>
+    <NavItem eventKey={2} href="#">
+    {
+    language==='esp'?
+    <img id ='flag' src={usFlag} onClick={props.changeLanguage} />
+    :
+    <img id='flag' src={spainFlag} onClick={props.changeLanguage} />
+    }
+    </NavItem>
+  
     </Nav>
   </Navbar.Collapse>
 </Navbar>
