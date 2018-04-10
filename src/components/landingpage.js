@@ -16,31 +16,32 @@ export default (props)=> {
           { language==='eng' ?
             <div>
                 <h1>Welcome</h1>
-                <p>
+                <h4>
                 Your Brand is more than a logo or a business, your Brand has a story to tell, an unforgettable experience to create and the opportunity to see your product or service as a need that your audience wants to live.
                 <br/>
                 <br/>
-                Join Us, Let us show you how we do it.
-                </p>
+                Join Us. Let us show you how we do it.
+                </h4>
             </div>
             :
             <div>
               <h1>Beinvenidos</h1>
-              <p>
-              Implementamos y fortalecemos los canales digitales, a través de una sólida estrategia de mercadeo digital fundamentada en la consultoría, análisis, diseño, ejecución y mecanismos de medición que permiten llevar trazabilidad y efectividad.
-              </p>
+              <h4>
+              El poder de una marca está en las historias que puede contar, en las experiencias que
+              construye, en la manera como se queda en la mente y corazón de sus audiencias, creando
+              identidad y apropiación de los productos o servicios.              </h4>
             </div>
           }
           </div>
           <Carousel>
-            {/*<Carousel.Item>
+            <Carousel.Item>
               <img id='carImg' src={docks} />
               <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </Carousel.Caption>
             </Carousel.Item>
-            */}
+            
             <Carousel.Item>
               <img id='carImg' src={LA}/>
               <Carousel.Caption>

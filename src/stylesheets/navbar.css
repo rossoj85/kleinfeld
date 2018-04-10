@@ -1,0 +1,14 @@
+#navbar{
+    margin-bottom: 0px;
+    color: red;
+  }
+  #flag{
+    width: 60px;
+    height: 40px
+  }
+  #lang{
+    color: white;
+    cursor: pointer;
+    float: right;
+    min-height: 40px;
+  }

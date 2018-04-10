@@ -15,8 +15,9 @@ export default (props)=>{
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
-  <Navbar.Collapse>
     
+
+  <Navbar.Collapse>
     <Nav pullRight>
       <NavItem eventKey={1} href="#">
        About Us
@@ -30,6 +31,7 @@ export default (props)=>{
     <NavItem eventKey={2} href="#">
       Contact
     </NavItem>
+    {/*
     <NavItem eventKey={2} href="#">
     {
     language==='esp'?
@@ -38,9 +40,17 @@ export default (props)=>{
     <img id='flag' src={spainFlag} onClick={props.changeLanguage} />
     }
     </NavItem>
-  
+  */}
     </Nav>
   </Navbar.Collapse>
+  <div id='lang'>
+  {
+    language==='esp'?
+    <p onClick={props.changeLanguage} ><span class="glyphicon glyphicon-globe"></span> English Site</p>
+    :
+    <p onClick={props.changeLanguage} ><span class="glyphicon glyphicon-globe"></span> Sitio en Español</p>
+  }
+  </div>  
 </Navbar>
     )
 } 
