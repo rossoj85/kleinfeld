@@ -50,7 +50,36 @@ export default (props)=> {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-            
+
+          <div className='textBox'>
+          {
+            language==='eng' ?
+            <h1>ENGLISH TRANSLATION NEEDED</h1>
+            :
+            <h2>
+          Implementamos y fortalecemos los canales digitales, a través de una sólida estrategia de
+          mercadeo digital fundamentada en la consultoría, análisis, diseño, ejecución y mecanismos de
+          medición que permiten llevar trazabilidad y efectividad.
+          </h2>
+          }
+          </div>
+
+          <div id='columns'>
+            <div className='centered col-sm-12 col-md-6 col-lg-4'>
+              <h2><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h2>
+              <p>Words Words Words Words Words Words Words Words WordsWords</p>
+            </div>
+
+            <div className='centered col-sm-12 col-md-6 col-lg-4'>
+              <h2><span className="glyphicon glyphicon-comment"></span>Be + <br/>Social</h2>
+              <p>Words Words Words Words Words Words Words Words WordsWords</p>
+            </div>
+
+            <div className='centered col-sm-12 col-md-6 col-lg-4'>
+              <h2><span></span>Be + <br/><br/></h2>
+              <p>Words Words Words Words Words Words Words Words WordsWords</p>
+            </div>
+          </div>
         </div>
       );
     

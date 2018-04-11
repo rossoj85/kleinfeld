@@ -1,6 +1,6 @@
 import React from 'react';
-import spainFlag from './images/spainFlag.jpg'
-import usFlag from './images/usFlag.jpg';
+// import spainFlag from './images/spainFlag.jpg'
+// import usFlag from './images/usFlag.jpg';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 
 export default (props)=>{

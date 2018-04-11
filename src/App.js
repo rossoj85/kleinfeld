@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import { Route, Switch, Fade } from 'react-router-dom';
-import {LandingPage, Navbar} from './components'
+import {LandingPage, Navbar, Footer, AboutUs, OurWork, Services, Contact} from './components'
 
 class App extends Component {
   constructor(props){
@@ -26,6 +26,7 @@ class App extends Component {
   render() {
     console.log(LandingPage)
     console.log(this.state.language)
+    console.log(AboutUs)
     const landingPageFunc =(props)=>{
       return(
         <LandingPage language={this.state.language}
@@ -38,7 +39,17 @@ class App extends Component {
     return (
       <div className="root">
         <Navbar language={this.state.language} changeLanguage={this.changeLanguage}/>
+        <div id='innerBody'>
+        <Switch>
         <Route exact path='/' render={landingPageFunc} />
+        <Route exact path='/about' component={AboutUs} />
+        <Route exact path='/ourWork' component={OurWork} />
+        <Route exact path='/services' component={Services} />
+        <Route exact path='/contact' component={Contact} />
+        </Switch>
+        </div>
+    
+        <Footer />
       </div>
     );
   }

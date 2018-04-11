@@ -1,0 +1,22 @@
+/* html{
+  font-family: 'Nunito Sans' !important;
+} */
+$greyGradient: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+  font-family: 'Nunito Sans' !important;
+}
+#innerBody{
+  min-height: 100vh;
+  margin-top: 91px;
+}
+
+@import 'stylesheets/navbar.scss';
+@import 'stylesheets/landingPage.scss';
+@import 'stylesheets/footer.scss';
+
+
+
