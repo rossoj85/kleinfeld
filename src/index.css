@@ -72,20 +72,23 @@ body {
     width: 36px;
     margin: 0 3px;
     transition: .6s; }
-  .nav-footer .nav-link-github:hover {
+  .nav-footer .nav-link-instagram:hover {
     opacity: 1;
     transform: scale(1.15);
-    background-color: #81047E;
+    background-color: white;
     border-radius: 50%;
     transition: .6s; }
-  .nav-footer .nav-link-github .default-link {
+  .nav-footer .nav-link-instagram .default-link {
     position: absolute;
     top: 6px;
-    left: 6px;
-    opacity: 0; }
-  .nav-footer .nav-link-github .hover-link {
-    opacity: 1;
+    left: 6px; }
+    .nav-footer .nav-link-instagram .default-link:hover {
+      opacity: 0; }
+  .nav-footer .nav-link-instagram .hover-link {
+    opacity: 0;
     transition: .6s; }
+    .nav-footer .nav-link-instagram .hover-link:hover {
+      opacity: 1; }
   .nav-footer .nav-link-linkedin:hover {
     opacity: 1;
     transform: scale(1.15);

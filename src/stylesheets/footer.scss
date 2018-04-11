@@ -31,12 +31,12 @@ $linkedin-blue:#0079B3;
       margin: 0 3px;
       transition: .6s;
     }
-    .nav-link-github {
+    .nav-link-instagram {
       
       &:hover {
         opacity: 1;
         transform: scale(1.15);
-        background-color: $github-purple;
+        background-color: white;
         border-radius: 50%;
         transition: .6s;
       }
@@ -44,11 +44,12 @@ $linkedin-blue:#0079B3;
           position: absolute;
           top: 6px;
           left: 6px;
-          opacity: 0;
+          &:hover {opacity: 0;}
         }
         .hover-link {
-          opacity: 1;
+          opacity: 0;
           transition: .6s;
+          &:hover {opacity:1}
         }
       }
     .nav-link-linkedin {
