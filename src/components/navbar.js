@@ -11,7 +11,7 @@ export default (props)=>{
         <Navbar inverse collapseOnSelect fixedTop id='navbar'>
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="#brand">Be<small>+</small></a>
+      <a href="/">Be<small>+</small></a>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
@@ -19,16 +19,16 @@ export default (props)=>{
 
   <Navbar.Collapse>
     <Nav pullRight>
-      <NavItem eventKey={1} href="#">
+      <NavItem eventKey={1} href="/about">
        About Us
       </NavItem>
-      <NavItem eventKey={2} href="#">
+      <NavItem eventKey={2} href="/ourWork">
        Our Work
       </NavItem>
-      <NavItem eventKey={1} href="#">
+      <NavItem eventKey={1} href="/services">
       Services
     </NavItem>
-    <NavItem eventKey={2} href="#">
+    <NavItem eventKey={2} href="/contact">
       Contact
     </NavItem>
     {/*
@@ -46,9 +46,9 @@ export default (props)=>{
   <div id='lang'>
   {
     language==='esp'?
-    <p onClick={props.changeLanguage} ><span class="glyphicon glyphicon-globe"></span> English Site</p>
+    <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> English Site</p>
     :
-    <p onClick={props.changeLanguage} ><span class="glyphicon glyphicon-globe"></span> Sitio en Español</p>
+    <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> Sitio en Español</p>
   }
   </div>  
 </Navbar>
