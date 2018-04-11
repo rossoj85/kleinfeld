@@ -64,7 +64,7 @@ export default (props)=> {
           }
           </div>
 
-          <div id='columns'>
+          <div id='columns'className='clearfix'>
             <div className='centered col-sm-12 col-md-6 col-lg-4'>
               <h2><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h2>
               <p>Words Words Words Words Words Words Words Words WordsWords</p>

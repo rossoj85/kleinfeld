@@ -50,3 +50,67 @@ body {
   background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
   color: white;
   text-align: center; }
+
+.nav-footer {
+  display: block;
+  opacity: 1;
+  transition: all .6s ease;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+  padding: 0 1em; }
+  .nav-footer:hover .nav-link-footer {
+    opacity: .5;
+    transform: translateY(6px);
+    transition: .6s; }
+  .nav-footer #designedLine {
+    margin-left: 1.5em; }
+  .nav-footer .nav-link-footer {
+    display: inline-block;
+    position: relative;
+    padding: 6px 6px;
+    height: 36px;
+    width: 36px;
+    margin: 0 3px;
+    transition: .6s; }
+  .nav-footer .nav-link-github:hover {
+    opacity: 1;
+    transform: scale(1.15);
+    background-color: #81047E;
+    border-radius: 50%;
+    transition: .6s; }
+  .nav-footer .nav-link-github .default-link {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    opacity: 0; }
+  .nav-footer .nav-link-github .hover-link {
+    opacity: 1;
+    transition: .6s; }
+  .nav-footer .nav-link-linkedin:hover {
+    opacity: 1;
+    transform: scale(1.15);
+    background-color: #0079B3;
+    border-radius: 50%;
+    transition: .6s; }
+  .nav-footer .nav-link-linkedin .default-link {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    opacity: 0; }
+  .nav-footer .nav-link-linkedin .hover-link {
+    opacity: 1;
+    transition: .6s; }
+  .nav-footer .nav-link-mail:hover {
+    opacity: 1;
+    transform: scale(1.15);
+    background-color: maroon;
+    border-radius: 50%;
+    transition: .6s; }
+  .nav-footer .nav-link-mail .default-link {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    opacity: 0; }
+  .nav-footer .nav-link-mail .hover-link {
+    opacity: 1;
+    transition: .6s; }
