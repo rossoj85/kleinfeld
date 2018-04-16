@@ -10,6 +10,28 @@ body {
   min-height: 100vh;
   margin-top: 91px; }
 
+#carImg, #aboutJumbo {
+  width: 100%;
+  height: 80vh; }
+
+.jumboTextWhite {
+  margin-left: 27vw;
+  margin: 0px;
+  position: absolute;
+  top: 100px;
+  z-index: 99;
+  color: white;
+  font-weight: bold; }
+
+.jumboTextBlack {
+  margin-left: 27vw;
+  margin: 0px;
+  position: absolute;
+  top: 100px;
+  z-index: 99;
+  color: black;
+  font-weight: bold; }
+
 #navbar {
   margin-bottom: 0px;
   color: red; }
@@ -32,10 +54,6 @@ body {
   z-index: 99;
   color: white;
   font-weight: bold; }
-
-#carImg {
-  width: 100%;
-  height: 80vh; }
 
 .textBox {
   padding: 10%; }
@@ -78,17 +96,17 @@ body {
     background-color: white;
     border-radius: 50%;
     transition: .6s; }
+    .nav-footer .nav-link-instagram:hover .hover-link {
+      opacity: 1; }
+    .nav-footer .nav-link-instagram:hover .default-link {
+      opacity: 0; }
   .nav-footer .nav-link-instagram .default-link {
     position: absolute;
     top: 6px;
     left: 6px; }
-    .nav-footer .nav-link-instagram .default-link:hover {
-      opacity: 0; }
   .nav-footer .nav-link-instagram .hover-link {
     opacity: 0;
     transition: .6s; }
-    .nav-footer .nav-link-instagram .hover-link:hover {
-      opacity: 1; }
   .nav-footer .nav-link-linkedin:hover {
     opacity: 1;
     transform: scale(1.15);
@@ -117,3 +135,7 @@ body {
   .nav-footer .nav-link-mail .hover-link {
     opacity: 1;
     transition: .6s; }
+
+#aboutJumbo {
+  background-image: url("components/images/church.jpg");
+  background-size: cover; }

@@ -1,16 +1,9 @@
 #jumbotronText{
-    margin-left: 27vw;
-  margin: 0px;
-  position: absolute;
-  top: 100px;
-  z-index: 99;
-  color: white;
-  font-weight: bold;
+@include jumboText(white)
 }
 
 #carImg{
-width: 100%;
-height: 80vh;
+@extend %jumboDimensions
 }
 
 .textBox{

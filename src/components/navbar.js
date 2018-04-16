@@ -2,6 +2,7 @@ import React from 'react';
 // import spainFlag from './images/spainFlag.jpg'
 // import usFlag from './images/usFlag.jpg';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap';
 
 export default (props)=>{
     console.log('inside')
@@ -11,7 +12,7 @@ export default (props)=>{
         <Navbar inverse collapseOnSelect fixedTop id='navbar'>
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="/">Be<small>+</small></a>
+      <LinkContainer to='/'><a>Be<small>+</small></a></LinkContainer>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
@@ -19,18 +20,16 @@ export default (props)=>{
 
   <Navbar.Collapse>
     <Nav pullRight>
-      <NavItem eventKey={1} href="/about">
-       About Us
-      </NavItem>
-      <NavItem eventKey={2} href="/ourWork">
+      <LinkContainer to='/about'><NavItem eventKey={1} >About Us</NavItem></LinkContainer>
+      <LinkContainer to='/ourWork'><NavItem eventKey={2} >
        Our Work
-      </NavItem>
-      <NavItem eventKey={1} href="/services">
+      </NavItem></LinkContainer>
+      <LinkContainer to='/services'><NavItem eventKey={1} >
       Services
-    </NavItem>
-    <NavItem eventKey={2} href="/contact">
+    </NavItem></LinkContainer>
+    <LinkContainer to='/contact'><NavItem eventKey={2} >
       Contact
-    </NavItem>
+    </NavItem></LinkContainer>
     {/*
     <NavItem eventKey={2} href="#">
     {

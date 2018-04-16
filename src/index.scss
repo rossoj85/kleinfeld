@@ -14,9 +14,37 @@ body {
   margin-top: 91px;
 }
 
+//extentions and mixins
+%jumboDimensions{
+  width: 100%;
+  height: 80vh;
+} 
+
+@mixin jumboCreater($photoURL){
+  @extend %jumboDimensions;
+  background-image: url($photoURL);
+  background-size: cover;
+}
+@mixin jumboText($color){
+  margin-left: 27vw;
+  margin: 0px;
+  position: absolute;
+  top: 100px;
+  z-index: 99;
+  color: $color;
+  font-weight: bold;
+}
+.jumboTextWhite{
+  @include jumboText(white)
+}
+.jumboTextBlack{
+  @include jumboText(black)
+}
+
 @import 'stylesheets/navbar.scss';
 @import 'stylesheets/landingPage.scss';
 @import 'stylesheets/footer.scss';
+@import 'stylesheets/aboutUs.scss';
 
 
 

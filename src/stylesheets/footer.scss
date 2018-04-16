@@ -39,17 +39,18 @@ $linkedin-blue:#0079B3;
         background-color: white;
         border-radius: 50%;
         transition: .6s;
+        .hover-link {opacity:1}
+        .default-link {opacity: 0;}
       }
         .default-link {
           position: absolute;
           top: 6px;
           left: 6px;
-          &:hover {opacity: 0;}
+        //   &:hover {opacity: 0;}
         }
         .hover-link {
           opacity: 0;
           transition: .6s;
-          &:hover {opacity:1}
         }
       }
     .nav-link-linkedin {
