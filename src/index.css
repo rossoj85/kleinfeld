@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   margin-top: 91px; }
 
-#carImg, #aboutJumbo {
+#carImg, #aboutJumbo, #ourWorkJumbo {
   width: 100%;
   height: 80vh; }
 
@@ -56,7 +56,7 @@ body {
   font-weight: bold; }
 
 .textBox {
-  padding: 10%; }
+  padding: 7% 10%; }
 
 #columns {
   min-height: 200px; }
@@ -171,3 +171,19 @@ body {
     color: black; }
   .card button:hover, .card a:hover {
     opacity: 0.7; }
+
+#ourWorkJumbo {
+  background-image: url("components/images/mill.jpg");
+  background-size: cover; }
+
+#ourClients {
+  height: 500px; }
+
+#contactHeader {
+  padding: 10px 15px; }
+  @media (min-width: 960px) {
+    #contactHeader {
+      width: 50%; } }
+
+#altContacts {
+  padding: 0% 10%; }

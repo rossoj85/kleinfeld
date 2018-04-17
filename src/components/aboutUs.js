@@ -54,15 +54,15 @@ export default (props)=>{
             {
                 profiles.map(profile=>(
                     <div className="card col-sm-6 col-md-6 col-lg-4">
-                    <img src={dummyProfile} alt="John" style={{width:"100%"}} />
-                    <h1>{profile.name}</h1>
-                    <p className="title">{profile.title}</p>
-                    <p>{profile.education}</p>
-                    <div style={{margin: "24px 0;"}}>
-                        <a href="#"><i className="fa fa-dribbble"></i></a> 
-                        <a href="#"><i className="fa fa-twitter"></i></a>  
-                        <a href="#"><i className="fa fa-linkedin"></i></a>  
-                        <a href="#"><i className="fa fa-facebook"></i></a> 
+                        <img src={dummyProfile} alt="John" style={{width:"100%"}} />
+                        <h1>{profile.name}</h1>
+                        <p className="title">{profile.title}</p>
+                        <p>{profile.education}</p>
+                        <div style={{margin: "24px 0;"}}>
+                            <a href="#"><i className="fa fa-dribbble"></i></a> 
+                            <a href="#"><i className="fa fa-twitter"></i></a>  
+                            <a href="#"><i className="fa fa-linkedin"></i></a>  
+                            <a href="#"><i className="fa fa-facebook"></i></a> 
                     </div>
                     <p><button>Contact</button></p>
                 </div>

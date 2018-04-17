@@ -44,9 +44,9 @@ class App extends Component {
         <Switch>
         <Route exact path='/' render={landingPageFunc} />
         <Route exact path='/about' render={()=> <AboutUs language={this.state.language} />} />
-        <Route exact path='/ourWork' component={OurWork} />
-        <Route exact path='/services' component={Services} />
-        <Route exact path='/contact' component={Contact} />
+        <Route exact path='/ourWork' render={()=> <OurWork language={this.state.language} />} />
+        <Route exact path='/services' render={()=> <Services language={this.state.language} />} />
+        <Route exact path='/contact' render={()=> <Contact language={this.state.language} />} />
         </Switch>
         </div>
     
