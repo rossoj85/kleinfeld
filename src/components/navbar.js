@@ -30,26 +30,26 @@ export default (props)=>{
     <LinkContainer to='/contact'><NavItem eventKey={2} >
       Contact
     </NavItem></LinkContainer>
-    {/*
-    <NavItem eventKey={2} href="#">
+    <NavItem>
     {
-    language==='esp'?
-    <img id ='flag' src={usFlag} onClick={props.changeLanguage} />
-    :
-    <img id='flag' src={spainFlag} onClick={props.changeLanguage} />
+      language==='esp'?
+      <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> English Site</p>
+      :
+      <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> Sitio en Español</p>
     }
     </NavItem>
-  */}
     </Nav>
   </Navbar.Collapse>
-  <div id='lang'>
   {
-    language==='esp'?
-    <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> English Site</p>
-    :
-    <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> Sitio en Español</p>
+  // <div id='lang'>
+  //   {
+  //     language==='esp'?
+  //     <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> English Site</p>
+  //     :
+  //     <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> Sitio en Español</p>
+  //   }
+  // </div>
   }
-  </div>  
 </Navbar>
     )
 } 

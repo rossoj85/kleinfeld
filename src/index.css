@@ -8,7 +8,8 @@ body {
 
 #innerBody {
   min-height: 100vh;
-  margin-top: 91px; }
+  /* margin-top: 91px;  */
+}
 
 #carImg, #aboutJumbo, #ourWorkJumbo {
   width: 100%;
@@ -34,14 +35,22 @@ body {
 
 #navbar {
   margin-bottom: 0px;
-  color: red; }
+  background: white;
+  border: none; }
+  #navbar a {
+    color: black;
+    text-shadow: none; }
+  #navbar .icon-bar {
+    background-color: black; }
+  #navbar .navbar-toggle:focus {
+    background-color: white; }
 
 #flag {
   width: 60px;
   height: 40px; }
 
 #lang {
-  color: white;
+  color: black;
   cursor: pointer;
   float: right;
   min-height: 40px; }
