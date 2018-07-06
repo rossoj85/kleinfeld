@@ -7,9 +7,7 @@ body {
   font-family: 'Nunito Sans' !important; }
 
 #innerBody {
-  min-height: 100vh;
-  /* margin-top: 91px;  */
-}
+  min-height: 100vh; }
 
 #carImg, #aboutJumbo, #ourWorkJumbo {
   width: 100%;
@@ -19,19 +17,21 @@ body {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 100px;
+  top: 91px;
   z-index: 99;
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5); }
 
 .jumboTextBlack {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 100px;
+  top: 91px;
   z-index: 99;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5); }
 
 #navbar {
   margin-bottom: 0px;
@@ -39,7 +39,16 @@ body {
   border: none; }
   #navbar a {
     color: black;
-    text-shadow: none; }
+    text-shadow: none;
+    background: white;
+    box-shadow: none; }
+    #navbar a:hover {
+      text-decoration: underline; }
+    #navbar a:focus {
+      background-color: white !important;
+      background-image: none;
+      border-image: none;
+      text-decoration: underline; }
   #navbar .icon-bar {
     background-color: black; }
   #navbar .navbar-toggle:focus {
@@ -59,10 +68,11 @@ body {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 100px;
+  top: 91px;
   z-index: 99;
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5); }
 
 .textBox {
   padding: 7% 10%; }

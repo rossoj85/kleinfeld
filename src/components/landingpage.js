@@ -17,10 +17,11 @@ export default (props)=> {
             <div>
                 <h1>Welcome</h1>
                 <h4>
-                Your Brand is more than a logo or a business, your Brand has a story to tell, an unforgettable experience to create and the opportunity to see your product or service as a need that your audience wants to live.
+                Your Brand is more than a logo or a business, your Brand has a story to tell, 
+                an unforgettable experience to create and the opportunity to see your product or service as a need that your audience wants to live.
                 <br/>
                 <br/>
-                Join Us. Let us show you how we do it.
+                Join us. Let us show you how we do it.
                 </h4>
             </div>
             :
@@ -36,18 +37,23 @@ export default (props)=> {
           <Carousel>
             <Carousel.Item>
               <img id='carImg' src={docks} />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
+              {
+              //   <Carousel.Caption>
+              //   <h3>First slide label</h3>
+              //   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              // </Carousel.Caption>
+            }
             </Carousel.Item>
             
             <Carousel.Item>
               <img id='carImg' src={LA}/>
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
+              
+          {
+          //   <Carousel.Caption>
+          //   <h3>Second slide label</h3>
+          //   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          // </Carousel.Caption>
+        }
             </Carousel.Item>
           </Carousel>
 
@@ -67,17 +73,34 @@ export default (props)=> {
           <div id='columns'className='clearfix'>
             <div className='centered col-sm-12 col-md-6 col-lg-4'>
               <h2><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h2>
-              <p>Words Words Words Words Words Words Words Words WordsWords</p>
+             { language==='eng' ?
+               <p>Consulting, Development and Administration</p>
+               :
+               <p>Consultoría, desarrollo y
+               administración</p>
+              }
             </div>
 
             <div className='centered col-sm-12 col-md-6 col-lg-4'>
               <h2><span className="glyphicon glyphicon-comment"></span>Be + <br/>Social</h2>
-              <p>Words Words Words Words Words Words Words Words WordsWords</p>
+               { language==='eng' ?
+               <p> Social Networking Strategies and Online Presence</p>
+               :
+               <p>Estrategia de redes
+               sociales y Publicidad
+               Online</p>
+              }
             </div>
 
             <div className='centered col-sm-12 col-md-6 col-lg-4'>
               <h2><span></span>Be + <br/><br/></h2>
-              <p>Words Words Words Words Words Words Words Words WordsWords</p>
+               { language==='eng' ?
+               <p>Branding, Marketing Strategies and Events</p>
+               :
+               <p>Branding, Estrategia de
+               Mercadeo relacional,
+               Eventos</p>
+              }
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ body {
 }
 #innerBody{
   min-height: 100vh;
-  margin-top: 91px;
+  // margin-top: 91px;
 }
 
 //extentions and mixins
@@ -29,10 +29,11 @@ body {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 100px;
+  top: 91px;
   z-index: 99;
   color: $color;
   font-weight: bold;
+  background: rgba($color: #000000, $alpha: .5)
 }
 .jumboTextWhite{
   @include jumboText(white)

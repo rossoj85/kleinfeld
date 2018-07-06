@@ -5,6 +5,19 @@
     a{
       color: black;
       text-shadow: none;
+      background: white;
+      box-shadow: none;
+    &:hover{
+      text-decoration: underline;
+    }
+   
+    &:focus{
+      background-color: white !important;
+     
+      background-image: none;
+      border-image: none;
+      text-decoration: underline;
+    }
     }
     .icon-bar{
       background-color:black
