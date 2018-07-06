@@ -29,11 +29,11 @@ body {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 91px;
+  top: 60px;
   z-index: 99;
   color: $color;
   font-weight: bold;
-  background: rgba($color: #000000, $alpha: .5)
+  background: rgba($color: #000000, $alpha: 1)
 }
 .jumboTextWhite{
   @include jumboText(white)

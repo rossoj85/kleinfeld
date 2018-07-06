@@ -60,46 +60,47 @@ export default (props)=> {
           <div className='textBox'>
           {
             language==='eng' ?
-            <h1>ENGLISH TRANSLATION NEEDED</h1>
+            <h1>Through a solid strategy of digital marketing, consulting, analysis
+            design, execution, and tracibility we implement or strengthen your online marketing campaigns.</h1>
             :
-            <h2>
+            <h1>
           Implementamos y fortalecemos los canales digitales, a través de una sólida estrategia de
           mercadeo digital fundamentada en la consultoría, análisis, diseño, ejecución y mecanismos de
           medición que permiten llevar trazabilidad y efectividad.
-          </h2>
+          </h1>
           }
           </div>
 
           <div id='columns'className='clearfix'>
-            <div className='centered col-sm-12 col-md-6 col-lg-4'>
+            <div className='centered col-sm-12 col-md-4 '>
               <h2><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h2>
              { language==='eng' ?
-               <p>Consulting, Development and Administration</p>
+               <h4>Consulting, Development and Administration</h4>
                :
-               <p>Consultoría, desarrollo y
-               administración</p>
+               <h4>Consultoría, desarrollo y
+               administración</h4>
               }
             </div>
 
-            <div className='centered col-sm-12 col-md-6 col-lg-4'>
+            <div className='centered col-sm-12 col-md-4 '>
               <h2><span className="glyphicon glyphicon-comment"></span>Be + <br/>Social</h2>
                { language==='eng' ?
-               <p> Social Networking Strategies and Online Presence</p>
+               <h4> Social Networking Strategies and Online Presence</h4>
                :
-               <p>Estrategia de redes
+               <h4>Estrategia de redes
                sociales y Publicidad
-               Online</p>
+               Online</h4>
               }
             </div>
 
-            <div className='centered col-sm-12 col-md-6 col-lg-4'>
+            <div className='centered col-sm-12 col-md-4 '>
               <h2><span></span>Be + <br/><br/></h2>
                { language==='eng' ?
-               <p>Branding, Marketing Strategies and Events</p>
+               <h4>Branding, Marketing Strategies and Events</h4>
                :
-               <p>Branding, Estrategia de
+               <h4>Branding, Estrategia de
                Mercadeo relacional,
-               Eventos</p>
+               Eventos</h4>
               }
             </div>
           </div>

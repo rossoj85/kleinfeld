@@ -17,21 +17,21 @@ body {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 91px;
+  top: 60px;
   z-index: 99;
   color: white;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.5); }
+  background: black; }
 
 .jumboTextBlack {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 91px;
+  top: 60px;
   z-index: 99;
   color: black;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.5); }
+  background: black; }
 
 #navbar {
   margin-bottom: 0px;
@@ -68,11 +68,11 @@ body {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 91px;
+  top: 60px;
   z-index: 99;
   color: white;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.5); }
+  background: black; }
 
 .textBox {
   padding: 7% 10%; }
