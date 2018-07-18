@@ -16,7 +16,7 @@ body {
 .jumboTextWhite {
   margin-left: 27vw;
   margin: 0px;
-  position: absolute;
+  position: relative;
   top: 60px;
   z-index: 99;
   color: white;
@@ -26,7 +26,7 @@ body {
 .jumboTextBlack {
   margin-left: 27vw;
   margin: 0px;
-  position: absolute;
+  position: relative;
   top: 60px;
   z-index: 99;
   color: black;
@@ -159,6 +159,16 @@ body {
   background-image: url("components/images/church.jpg");
   background-size: cover; }
 
+#aboutUsJumboText {
+  margin-left: 27vw;
+  margin: 0px;
+  position: relative;
+  top: 60px;
+  z-index: 99;
+  color: white;
+  font-weight: bold;
+  background: black; }
+
 #aboutProfiles {
   display: flex;
   flex-wrap: wrap; }
@@ -194,6 +204,16 @@ body {
 #ourWorkJumbo {
   background-image: url("components/images/mill.jpg");
   background-size: cover; }
+
+#ourWorkJumboText {
+  margin-left: 27vw;
+  margin: 0px;
+  position: relative;
+  top: 60px;
+  z-index: 99;
+  color: white;
+  font-weight: bold;
+  background: black; }
 
 #ourClients {
   height: 500px; }

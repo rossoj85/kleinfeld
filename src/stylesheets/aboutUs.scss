@@ -2,6 +2,9 @@
     @include jumboCreater('components/images/church.jpg')
     
 }
+#aboutUsJumboText{
+  @include jumboText(white)
+}
 #aboutProfiles{
     display: flex;
     flex-wrap: wrap;

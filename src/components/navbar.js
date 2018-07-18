@@ -1,13 +1,15 @@
 import React from 'react';
-// import spainFlag from './images/spainFlag.jpg'
-// import usFlag from './images/usFlag.jpg';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
+import { configureAnchors } from 'react-scrollable-anchor';
+
 
 export default (props)=>{
     console.log('inside')
     console.log('Navbar Props', props)
     let language = props.language
+
+    configureAnchors({offset: -60, scrollDuration: 600})
     return(
         <Navbar inverse collapseOnSelect fixedTop id='navbar'>
   <Navbar.Header>
@@ -20,23 +22,17 @@ export default (props)=>{
 
   <Navbar.Collapse>
     <Nav pullRight>
-      <LinkContainer to='/about'><NavItem eventKey={1} >About Us</NavItem></LinkContainer>
-      <LinkContainer to='/ourWork'><NavItem eventKey={2} >
-       Our Work
-      </NavItem></LinkContainer>
-      <LinkContainer to='/services'><NavItem eventKey={1} >
-      Services
-    </NavItem></LinkContainer>
-    <LinkContainer to='/contact'><NavItem eventKey={2} >
-      Contact
-    </NavItem></LinkContainer>
-    <NavItem>
-    {
-      language==='esp'?
-      <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> English Site</p>
-      :
-      <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> Sitio en Español</p>
-    }
+      <NavItem eventKey={1} href='#about'>About Us</NavItem>
+      <NavItem eventKey={2} href='#ourWork'>Our Work</NavItem>
+      <NavItem eventKey={1} href='#services' >Services</NavItem>
+      <NavItem eventKey={2} href='#contact'>Contact</NavItem>
+      <NavItem>
+        {
+          language==='esp'?
+          <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> English Site</p>
+          :
+          <p onClick={props.changeLanguage} ><span className="glyphicon glyphicon-globe"></span> Sitio en Español</p>
+        }
     </NavItem>
     </Nav>
   </Navbar.Collapse>

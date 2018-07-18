@@ -2,6 +2,9 @@
     @include jumboCreater('components/images/mill.jpg')
     
 }
+#ourWorkJumboText{
+    @include jumboText(white,relative)
+}
 
 #ourClients{
     height: 500px

@@ -25,10 +25,16 @@ body {
   background-image: url($photoURL);
   background-size: cover;
 }
-@mixin jumboText($color){
+@mixin jumboText($color, $position:null){
   margin-left: 27vw;
   margin: 0px;
-  position: absolute;
+  @if($position!=null){
+    position: $position
+  }
+    @else{
+      position: relative
+    }
+  
   top: 60px;
   z-index: 99;
   color: $color;

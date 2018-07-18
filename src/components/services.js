@@ -1,10 +1,13 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 export default ()=>{
 
     return(
-        <div id='SERVICES'>
-        <h1>SERVICES</h1>
-        </div>
+        <ScrollableAnchor id={'services'} >
+            <div id='SERVICES'>
+            <h1>SERVICES</h1>
+            </div>
+        </ScrollableAnchor>
     )
 }
