@@ -13,21 +13,10 @@ export default (props)=>{
                     { language==='eng' ?
                     <div>
                         <h1>Our Work</h1>
-                        <h4>
-                        ENGLISH TRANSLATION NEEDED
-                        </h4>
                     </div>
                     :
                     <div>
                         <h1>Nuestro Trabajo</h1>
-                        <h4>
-                        Existimos gracias a las marcas que confían en nosotros, los mismos que nos permiten seguir
-                        creciendo conjuntamente.
-                        <br/>
-                        Contamos con un equipo de trabajo maravilloso, motivado, soñador e intercultural que se deja
-                        tocar por la inspiración para transformer una idea en una estrategia que se desarrolla de
-                        principio a fin.
-                        </h4>
                     </div>
                     }
                 </div>
@@ -35,10 +24,18 @@ export default (props)=>{
                 <div className='textBox'>
                     {
                         language==='eng' ?
-                        <h3>ENGLISH TRANSLATION NEEDED</h3>
+                        <div>
+                            <h2>
+                            We exist thanks to the brands that trust us, the same ones that allow us to continue growing together.
+                            <br />
+                            <br />
+                            We have a strong, motivated, intercultural team that thinks big and uses its inspiration 
+                            to transform idea into a strategies that develop from start to finish.
+                            </h2>
+                        </div>
                         :
                         <div>
-                            <h3>
+                            <h2>
                             Existimos gracias a las marcas que confían en nosotros, los mismos que nos permiten seguir
                             creciendo conjuntamente.
                             <br/>
@@ -46,7 +43,7 @@ export default (props)=>{
                             Contamos con un equipo de trabajo maravilloso, motivado, soñador e intercultural que se deja
                             tocar por la inspiración para transformer una idea en una estrategia que se desarrolla de
                             principio a fin.
-                            </h3>
+                            </h2>
                         </div>
                     }
                 </div>

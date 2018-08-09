@@ -10,25 +10,16 @@ export default (props)=> {
     return(
         <ScrollableAnchor id={'splash'}>
         <div>
+           
             <div id='jumbotronText' className='col-lg-6 col-md-6'>
                 { language==='eng' ?
                 <div>
                     <h1>Welcome</h1>
-                    <h4>
-                    Your Brand is more than a logo or a business, your Brand has a story to tell, 
-                    an unforgettable experience to create and the opportunity to see your product or service as a need that your audience wants to live.
-                    <br/>
-                    <br/>
-                    Join us. Let us show you how we do it.
-                    </h4>
+
                 </div>
                 :
                 <div>
                     <h1>Beinvenidos</h1>
-                    <h4>
-                    El poder de una marca está en las historias que puede contar, en las experiencias que
-                    construye, en la manera como se queda en la mente y corazón de sus audiencias, creando
-                    identidad y apropiación de los productos o servicios.              </h4>
                 </div>
                 }
             </div>
@@ -45,10 +36,22 @@ export default (props)=> {
             <div className='textBox'>
                 {
                 language==='eng' ?
-                <h1>Through a solid strategy of digital marketing, consulting, analysis
-                design, execution, and tracibility we implement or strengthen your online marketing campaigns.</h1>
+                <h1>
+                Your Brand is more than a logo or a business, your Brand has a story to tell, 
+                an unforgettable experience to create and the opportunity to see your product or service 
+                as a need that your audience wants to live.
+                <br />
+                <br />
+                Through a solid strategy of digital marketing, consulting, analysis
+                design, execution, and tracibility we implement or strengthen your online marketing campaigns.
+                </h1>
                 :
                 <h1>
+                El poder de una marca está en las historias que puede contar, en las experiencias que
+                construye, en la manera como se queda en la mente y corazón de sus audiencias, creando
+                identidad y apropiación de los productos o servicios.  
+                <br />
+                <br />
                 Implementamos y fortalecemos los canales digitales, a través de una sólida estrategia de
                 mercadeo digital fundamentada en la consultoría, análisis, diseño, ejecución y mecanismos de
                 medición que permiten llevar trazabilidad y efectividad.
