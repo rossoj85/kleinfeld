@@ -37,6 +37,17 @@ body {
   margin-bottom: 0px;
   background: white;
   border: none; }
+  #navbar #logoContainer {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    color: black;
+    text-shadow: none;
+    height: 60px; }
+    #navbar #logoContainer .logo {
+      padding: 0px;
+      height: 60px;
+      width: 60px; }
   #navbar a {
     color: black;
     text-shadow: none;
@@ -63,6 +74,34 @@ body {
   cursor: pointer;
   float: right;
   min-height: 40px; }
+
+@keyframes opening-overlay {
+  0% {
+    opacity: 1;
+    z-index: 1000; }
+  70% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: 1000; } }
+
+@keyframes logo {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#initial-mount {
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation-name: opening-overlay;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out; }
 
 #jumbotronText {
   margin-left: 27vw;

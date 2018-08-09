@@ -10,6 +10,7 @@ export default (props)=> {
     return(
         <ScrollableAnchor id={'splash'}>
         <div>
+           
             <div id='jumbotronText' className='col-lg-6 col-md-6'>
                 { language==='eng' ?
                 <div>

@@ -2,6 +2,7 @@ import React from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 import { configureAnchors } from 'react-scrollable-anchor';
+import mango from './images/mango.png';
 
 
 export default (props)=>{
@@ -14,7 +15,13 @@ export default (props)=>{
         <Navbar inverse collapseOnSelect fixedTop id='navbar'>
   <Navbar.Header>
     <Navbar.Brand>
-      <LinkContainer to='/'><a>Be<small>+</small></a></LinkContainer>
+      {/*<LinkContainer to='/'><a>Be<small>+</small></a></LinkContainer>*/}
+      <LinkContainer to='/'> 
+        <div id='logoContainer'>
+          <img className='logo' src={mango} />
+          <h4>M A N G O</h4>  
+        </div>
+      </LinkContainer>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>

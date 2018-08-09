@@ -2,6 +2,21 @@
     margin-bottom: 0px;
     background: white;
     border: none;
+    #logoContainer{
+      display: flex;
+      align-items: center;
+      padding: 0px;
+      color: black;
+      text-shadow: none;
+      height: 60px;
+      .logo{
+        padding: 0px;
+        height: 60px;
+        width: 60px;
+      }
+
+    }
+    
     a{
       color: black;
       text-shadow: none;
