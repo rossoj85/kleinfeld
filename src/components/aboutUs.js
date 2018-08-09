@@ -19,18 +19,10 @@ export default (props)=>{
                 { language==='eng' ?
                 <div>
                     <h1>About Us</h1>
-                    <h4>
-                    ENGLISH TRANSLATION NEEDED
-                    </h4>
                 </div>
                 :
                 <div>
                     <h1>Sobre Nosotros</h1>
-                    <h4>
-                        XXXXX es una agencia de mercadeo que crea un estilo de vida y de negocio para pequeñas y
-                        medianas empresas, a través de historias, recursos creativos, visuales, audiovisuales,
-                        interactivos y del análisis de datos.
-                    </h4>
                 </div>
                 }
                 </div>
@@ -39,13 +31,30 @@ export default (props)=>{
                 <div className='textBox'>
                     {
                     language==='eng' ?
-                    <h1>ENGLISH TRANSLATION NEEDED</h1>
+                    <h2>
+                    Mango is a marketing agency that builds brick-by-brick, creating new images and business
+                    for small and medium-sized enterprises through stories, creative audiovisual content, 
+                    and interactive analysis of data.
+                    <br/>
+                    <br/>
+                    We collect the necessary insights that allow us to get closer and reach
+                    to the desired audience in the right way and at the right time. Mango creates
+                    solid and lasting communities around a product or service, giving them shape, 
+                    life and feeling to what each brand wants to show.
+                    
+                    </h2>
                     :
                     <h2>
-                    En XXXX recopilamos los insights necesarios que nos permiten acercarnos y llegar a las
-                    audiencias deseadas, de la forma correcta y en el momento adecuado, creando de esta
-                    manera comunidades sólidas que perduran, dándole forma, vida y sentimiento al producto y
-                    servicio ofrecido por cada marca.
+                    Mango es una agencia de mercadeo que construye con cada marca, crea un nuevo
+                    estilo de vida y de negocio para audiencias de pequeñas y medianas empresas, a
+                    través de historias, recursos creativos, visuales, audiovisuales, interactivos y del
+                    análisis de datos.
+                    <br />
+                    <br />
+                    En Mango recopilamos los insights necesarios que nos permiten acercarnos y llegar
+                    a las audiencias deseadas, de la forma correcta y en el momento adecuado, creando
+                    comunidades sólidas y duraderas, dándole forma, vida y sentimiento a lo que cada
+                    marca quiere mostrar.
                     </h2>
                     }
                 </div>
