@@ -8,7 +8,7 @@ export default (props)=>{
     console.log('ourWork props', props)
     return(
         <ScrollableAnchor id={'ourWork'} >
-            <div id='ourWork'>
+            <div >
                 <div  id='ourWorkJumboText' className=' jumboTextBlack col-lg-6 col-md-6'>
                     { language==='eng' ?
                     <div>
