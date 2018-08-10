@@ -7,18 +7,20 @@ export default (props)=>{
     return(
         <ScrollableAnchor id={'services'} >
             <div >
-                <div  id='servicesJumboText' className=' jumboTextBlack col-lg-6 col-md-6'>
-                    { language==='eng' ?
-                    <div>
-                        <h1>Our Services</h1>
-                    </div>
-                    :
-                    <div>
-                        <h1>Nuestro Servicios</h1>
-                    </div>
-                    }
-                </div>
-                <Jumbotron id='servicesJumbo'  />
+            <Jumbotron id='servicesJumbo'>
+                        <div  id='servicesJumboText' className=' jumboTextBlack'>
+                            { language==='eng' ?
+                            <div>
+                                <h1>Our Services</h1>
+                            </div>
+                            :
+                            <div>
+                                <h1>Nuestro Servicios</h1>
+                            </div>
+                            }
+                        </div>
+                </Jumbotron>
+                
                 <div className='textBox'>
                     {
                         language==='eng' ?
