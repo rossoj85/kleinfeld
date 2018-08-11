@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 // import './App.css';
 import { Route, Switch, Fade } from 'react-router-dom';
 import {LandingPage, Navbar, Footer, AboutUs, OurWork, Services, Contact} from './components'

@@ -16,7 +16,7 @@ export default class Contact extends React.Component{
                     </div>
 
                     <div id='contactForm' className= 'col-xs-12 col-md-6 col-lg-6'>
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" id="contactForm" noValidate>
                             <div className="control-group form-group">
                                 <div className="controls">
                                     <label>Full Name:</label>
@@ -50,7 +50,7 @@ export default class Contact extends React.Component{
                                     <label>Message:</label>
                                         <textarea rows="7" cols="100" className="form-control" id="message" 
                                         required data-validation-required-message="Please enter your message" 
-                                        maxlength="999" 
+                                        maxLength="999" 
                                         style={{resize: "none"}}></textarea>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ export default class Contact extends React.Component{
                     <div id='altContacts' className='col-xs-12 col-md-4 col-lg-4'>
                         <h3>Also you can:</h3>
                         <h3><span className="glyphicon glyphicon-envelope"></span>Write us: <br/> hello@xxxx.com</h3>
-                        <h3><span class="glyphicon glyphicon-earphone"></span>Call us: <br/>2489838897</h3>
+                        <h3><span className="glyphicon glyphicon-earphone"></span>Call us: <br/>2489838897</h3>
                     </div>
                 </div>
             </ScrollableAnchor>

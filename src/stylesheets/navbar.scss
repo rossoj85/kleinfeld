@@ -22,16 +22,21 @@
       text-shadow: none;
       background: white;
       box-shadow: none;
-    &:hover{
-      text-decoration: underline;
-    }
-   
-    &:focus{
+  
+     &:hover, &:target, &:active{
       background-color: white !important;
-     
       background-image: none;
       border-image: none;
-      text-decoration: underline;
+      border-bottom: black 3px solid;
+      // text-decoration: underline;
+      color:black;
+      font-weight: 1000;
+      // font-size:16px;
+      box-shadow: none;
+      outline:none;
+    }
+    &:hover{
+      border-bottom: none;
     }
     }
     .icon-bar{

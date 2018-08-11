@@ -9,7 +9,7 @@ body {
 #innerBody {
   min-height: 100vh; }
 
-#carImg, #aboutJumbo, #ourWorkJumbo, #servicesJumbo {
+#welcomeJumbo, #carImg, #aboutJumbo, #ourWorkJumbo, #servicesJumbo {
   width: 100%;
   height: 80vh; }
 
@@ -17,21 +17,23 @@ body {
   margin-left: 27vw;
   margin: 0px;
   position: relative;
-  top: 60px;
-  z-index: 99;
+  display: table-cell;
+  vertical-align: middle;
+  background: none;
+  text-align: center;
   color: white;
-  font-weight: bold;
-  background: black; }
+  background: none; }
 
 .jumboTextBlack {
   margin-left: 27vw;
   margin: 0px;
   position: relative;
-  top: 60px;
-  z-index: 99;
+  display: table-cell;
+  vertical-align: middle;
+  background: none;
+  text-align: center;
   color: black;
-  font-weight: bold;
-  background: black; }
+  background: none; }
 
 #navbar {
   margin-bottom: 0px;
@@ -53,13 +55,17 @@ body {
     text-shadow: none;
     background: white;
     box-shadow: none; }
-    #navbar a:hover {
-      text-decoration: underline; }
-    #navbar a:focus {
+    #navbar a:hover, #navbar a:target, #navbar a:active {
       background-color: white !important;
       background-image: none;
       border-image: none;
-      text-decoration: underline; }
+      border-bottom: black 3px solid;
+      color: black;
+      font-weight: 1000;
+      box-shadow: none;
+      outline: none; }
+    #navbar a:hover {
+      border-bottom: none; }
   #navbar .icon-bar {
     background-color: black; }
   #navbar .navbar-toggle:focus {
@@ -103,18 +109,27 @@ body {
   animation-duration: 5s;
   animation-timing-function: ease-in-out; }
 
+#welcomeJumbo {
+  background-image: url("components/images/docks.jpg");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+  background-position: top; }
+
 #jumbotronText {
   margin-left: 27vw;
   margin: 0px;
   position: absolute;
-  top: 60px;
-  z-index: 99;
+  display: table-cell;
+  vertical-align: middle;
+  background: none;
+  text-align: center;
   color: white;
-  font-weight: bold;
-  background: black; }
+  background: none; }
 
 .textBox {
-  padding: 7% 10%; }
+  padding: 7% 10%;
+  text-align: center; }
 
 #columns {
   min-height: 200px; }
@@ -196,17 +211,19 @@ body {
 
 #aboutJumbo {
   background-image: url("components/images/church.jpg");
-  background-size: cover; }
+  background-size: cover;
+  display: table; }
 
 #aboutUsJumboText {
   margin-left: 27vw;
   margin: 0px;
   position: relative;
-  top: 60px;
-  z-index: 99;
+  display: table-cell;
+  vertical-align: middle;
+  background: none;
+  text-align: center;
   color: white;
-  font-weight: bold;
-  background: black; }
+  background: none; }
 
 #aboutProfiles {
   display: flex;
@@ -242,34 +259,38 @@ body {
 
 #ourWorkJumbo {
   background-image: url("components/images/mill.jpg");
-  background-size: cover; }
+  background-size: cover;
+  display: table; }
 
 #ourWorkJumboText {
   margin-left: 27vw;
   margin: 0px;
   position: relative;
-  top: 60px;
-  z-index: 99;
+  display: table-cell;
+  vertical-align: middle;
+  background: none;
+  text-align: center;
   color: white;
-  font-weight: bold;
-  background: black; }
+  background: none; }
 
 #ourClients {
   height: 500px; }
 
 #servicesJumbo {
   background-image: url("components/images/garden.jpg");
-  background-size: cover; }
+  background-size: cover;
+  display: table; }
 
 #servicesJumboText {
   margin-left: 27vw;
   margin: 0px;
   position: relative;
-  top: 60px;
-  z-index: 99;
+  display: table-cell;
+  vertical-align: middle;
+  background: none;
+  text-align: center;
   color: white;
-  font-weight: bold;
-  background: black; }
+  background: none; }
 
 #contactHeader {
   padding: 10px 15px; }

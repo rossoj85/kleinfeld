@@ -33,10 +33,15 @@
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
 }
-
+#welcomeJumbo{
+  @include jumboCreater('components/images/docks.jpg');
+  background-attachment: fixed;
+  background-position: top;
+}
 
 #jumbotronText{
-@include jumboText(white,absolute)
+  @include jumboText(white,absolute);
+  
 }
 
 #carImg{
@@ -45,6 +50,7 @@
 
 .textBox{
   padding: 7% 10%;
+  text-align: center;
 }
 #columns{
 

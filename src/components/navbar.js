@@ -29,10 +29,10 @@ export default (props)=>{
 
   <Navbar.Collapse>
     <Nav pullRight>
-      <NavItem eventKey={1} href='#about'>About Us</NavItem>
-      <NavItem eventKey={2} href='#ourWork'>Our Work</NavItem>
-      <NavItem eventKey={1} href='#services' >Services</NavItem>
-      <NavItem eventKey={2} href='#contact'>Contact</NavItem>
+      <NavItem eventKey={1} id='about' href='#about'>About Us</NavItem>
+      <NavItem eventKey={2} id='ourWork' href='#ourWork'>Our Work</NavItem>
+      <NavItem eventKey={1} id='services' href='#services' >Services</NavItem>
+      <NavItem eventKey={2} id='contact' href='#contact'>Contact</NavItem>
       <NavItem>
         {
           language==='esp'?
