@@ -1,0 +1,7 @@
+#servicesJumbo{
+    @include jumboCreater('components/images/garden.jpg')
+    
+}
+#servicesJumboText{
+    @include jumboText(white)
+}
