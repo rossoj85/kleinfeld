@@ -1,5 +1,5 @@
 import React from 'react';
-import Splash from './splash';
+import Welcome from './welcome';
 import AboutUs  from  './aboutUs';
 import OurWork from './ourWork';
 import Services from './services';
@@ -12,7 +12,7 @@ export default (props)=> {
         
       return (
         <div className='landingPage'>
-          <Splash language={language} />
+          <Welcome language={language} />
           <AboutUs language={language}/>
           <OurWork language={language} />
           <Services language={language} />
