@@ -101,7 +101,7 @@ export default (props)=>{
                                             <div className='dsCol col-sm-12 col-md-4'>
                                                 <h3>Operation</h3>
                                                 <ul>
-                                                    <li>Update COntent</li>
+                                                    <li>Update Content</li>
                                                     <li>Support Platform</li>
                                                     <li>SEO</li>
                                                     <li>Reports</li>

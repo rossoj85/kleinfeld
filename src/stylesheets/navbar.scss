@@ -1,3 +1,14 @@
+%activeNav{
+  background-color: white !important;
+  background-image: none;
+  border-image: none;
+  color:black;
+  font-weight: 1000;
+  box-shadow: none;
+  outline:none;
+}
+
+
 #navbar{
     margin-bottom: 0px;
     background: white;
@@ -22,21 +33,14 @@
       text-shadow: none;
       background: white;
       box-shadow: none;
-  
-     &:hover, &:target, &:active{
-      background-color: white !important;
-      background-image: none;
-      border-image: none;
+      outline: none;
+    
+     &:target, &:active{
+      @extend %activeNav;
       border-bottom: black 3px solid;
-      // text-decoration: underline;
-      color:black;
-      font-weight: 1000;
-      // font-size:16px;
-      box-shadow: none;
-      outline:none;
     }
     &:hover{
-      border-bottom: none;
+      @extend %activeNav;
     }
     }
     .icon-bar{

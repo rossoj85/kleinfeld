@@ -35,6 +35,15 @@ body {
   color: black;
   background: none; }
 
+#navbar a:target, #navbar a:active, #navbar a:hover {
+  background-color: white !important;
+  background-image: none;
+  border-image: none;
+  color: black;
+  font-weight: 1000;
+  box-shadow: none;
+  outline: none; }
+
 #navbar {
   margin-bottom: 0px;
   background: white;
@@ -54,18 +63,10 @@ body {
     color: black;
     text-shadow: none;
     background: white;
-    box-shadow: none; }
-    #navbar a:hover, #navbar a:target, #navbar a:active {
-      background-color: white !important;
-      background-image: none;
-      border-image: none;
-      border-bottom: black 3px solid;
-      color: black;
-      font-weight: 1000;
-      box-shadow: none;
-      outline: none; }
-    #navbar a:hover {
-      border-bottom: none; }
+    box-shadow: none;
+    outline: none; }
+    #navbar a:target, #navbar a:active {
+      border-bottom: black 3px solid; }
   #navbar .icon-bar {
     background-color: black; }
   #navbar .navbar-toggle:focus {
@@ -218,7 +219,8 @@ body {
   color: black;
   display: inline-table;
   width: 96px;
-  height: 96px; }
+  height: 96px;
+  margin: 1% 0%; }
 
 #aboutJumbo {
   background-image: url("components/images/church.jpg");

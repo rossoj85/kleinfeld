@@ -34,13 +34,13 @@ export default (props)=>{
                     language==='eng' ?
                     <h2>
                     Mango is a marketing agency that builds brick-by-brick, creating new images and business
-                    for small and medium-sized enterprises through stories, creative audiovisual content, 
+                    for small and medium-sized enterprises through stories, creative audiovisual content 
                     and interactive analysis of data.
                     <br/>
                     <br/>
                     We collect the necessary insights that allow us to get closer and reach
                     to the desired audience in the right way and at the right time. Mango creates
-                    solid and lasting communities around a product or service, giving them shape, 
+                    solid and lasting communities around products and services, giving them shape, 
                     life and feeling to what each brand wants to show.
                     
                     </h2>
