@@ -41,6 +41,9 @@ export default class Splash extends Component{
             </div>
             :
             <ScrollableAnchor id={'splash'}>
+
+
+            
                 <div>
                     <Jumbotron id='welcomeJumbo'  >
                         <div  id='ourWorkJumboText' className=' jumboTextBlack'>
