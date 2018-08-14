@@ -33,13 +33,13 @@ export default class Splash extends Component{
         // setTimeout(this.alertFunc, 3000)
         console.log('RENDERED!!!!!')   
         return(
-            this.state.whiteBackGround ? 
-            <div style={{
-            'height':'100vh', 
-            'backgroundColor': 'white' }}>
-                <h1>THE BACKGORUND IS WHITE </h1>
-            </div>
-            :
+            // this.state.whiteBackGround ? 
+            // <div style={{
+            // 'height':'100vh', 
+            // 'backgroundColor': 'white' }}>
+            //     <h1>THE BACKGORUND IS WHITE </h1>
+            // </div>
+            // :
             <ScrollableAnchor id={'splash'}>
 
 
@@ -132,7 +132,7 @@ export default class Splash extends Component{
                         </div>
 
                         <div className='centered col-sm-12 col-md-4 '>
-                            <h2><span></span>Be + <br/><br/></h2>
+                            <h2><span className='glyphicon glyphicon-bullhorn'></span>Be + <br/>Adds<br/></h2>
                             { language==='eng' ?
                             <h4>Branding, Marketing Strategies and Events</h4>
                             :

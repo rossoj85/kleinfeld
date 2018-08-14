@@ -274,7 +274,14 @@ body {
   background: none; }
 
 #ourClients {
-  height: 500px; }
+  padding-bottom: 50px; }
+
+.logoLine {
+  padding: 3% 10%; }
+
+.clientLogo {
+  width: 30%;
+  height: auto; }
 
 #servicesJumbo {
   background-image: url("components/images/garden.jpg");
@@ -291,6 +298,23 @@ body {
   text-align: center;
   color: white;
   background: none; }
+
+#serviceDescriptions {
+  text-align: left; }
+
+.serviceEntry {
+  padding: 5% 0%; }
+
+#digitalServiceCols {
+  text-align: center;
+  display: flex;
+  padding: 4% 0%; }
+  #digitalServiceCols .dsCol {
+    background-color: gray;
+    padding: 0px 20px;
+    background-clip: content-box; }
+    #digitalServiceCols .dsCol ul {
+      text-align: left; }
 
 #contactHeader {
   padding: 10px 15px; }

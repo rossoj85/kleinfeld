@@ -2,10 +2,17 @@ import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import mill from './images/mill.jpg'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Ikea from './images/logos/ikeaLogo.jpg'
+import Lexus from  './images/logos/lexusLogo.png'
+import Pepsi from   './images/logos/pepsiLogo.png'        
+
 
 export default (props)=>{
     let language = props.language
     console.log('ourWork props', props)
+
+    const logos=[Lexus, Pepsi, Ikea]
+
     return(
         <ScrollableAnchor id={'ourWork'} >
             <div >
@@ -49,15 +56,23 @@ export default (props)=>{
                         </div>
                     }
                 </div>
-                <div id='ourClients'>
-                {
-                    language==='eng'? 
-                    <h1>Our Clients</h1>
-                    :
-                    <h1>Nuestros Clientes</h1>
-
-                }
-                </div>
+                    <div id='ourClients' className='clearfix'>
+                    { 
+                        language==='eng'? 
+                        <h1>Our Clients</h1>
+                        :
+                        <h1>Nuestros Clientes</h1>
+                    }
+                    <div className='logoLine clearfix'>
+                        {   
+                            logos.map(logo=>{
+                                return(
+                                    <img className= 'clientLogo col-xs-4' src={logo} />
+                                )
+                        })
+                        }
+                    </div>
+                    </div>
             </div>
         </ScrollableAnchor>
     )
