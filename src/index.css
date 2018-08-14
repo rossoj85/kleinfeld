@@ -209,6 +209,17 @@ body {
     opacity: 1;
     transition: .6s; }
 
+.logo {
+  height: 60px;
+  width: 60px; }
+
+.footerLogo {
+  background: white;
+  color: black;
+  display: inline-table;
+  width: 96px;
+  height: 96px; }
+
 #aboutJumbo {
   background-image: url("components/images/church.jpg");
   background-size: cover;
