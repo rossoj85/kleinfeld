@@ -47,7 +47,8 @@ body {
 #navbar {
   margin-bottom: 0px;
   background: white;
-  border: none; }
+  border: none;
+  z-index: 98; }
   #navbar #logoContainer {
     display: flex;
     align-items: center;
@@ -82,6 +83,73 @@ body {
   float: right;
   min-height: 40px; }
 
+#splashBody {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: table; }
+
+.beginSplash {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 99;
+  background-color: white; }
+
+.fadeOut {
+  transition: all  3s linear;
+  background-color: transparent;
+  visibility: hidden;
+  color: transparent;
+  display: none;
+  opacity: 0; }
+
+#splashText {
+  margin-left: 27vw;
+  margin: 0px;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.splashTextFadeOut {
+  transition: all  2s linear;
+  background-color: transparent;
+  visibility: hidden;
+  color: transparent; }
+
+#splashLogo {
+  color: transparent;
+  display: inline-block;
+  margin-top: -180px; }
+  #splashLogo img {
+    height: 200px;
+    width: 200px; }
+  #splashLogo h1 {
+    font-size: 50px; }
+
+.hiddenLogo {
+  background: transparent;
+  color: transparent; }
+  .hiddenLogo img {
+    opacity: 0; }
+
+.fadeInLogo {
+  transition: all 1s linear;
+  color: black;
+  background: white; }
+  .fadeInLogo img {
+    transition: opacity 1s linear;
+    opacity: 1; }
+
+.noDisplay {
+  display: none; }
+
+.fadeOutLogo {
+  transition: all  .7s linear;
+  opacity: 0;
+  color: transparent; }
+
 @keyframes opening-overlay {
   0% {
     opacity: 1;
@@ -115,7 +183,11 @@ body {
   background-size: cover;
   display: table;
   background-attachment: fixed;
-  background-position: top; }
+  background-position: top;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh; }
 
 #jumbotronText {
   margin-left: 27vw;
@@ -225,7 +297,10 @@ body {
 #aboutJumbo {
   background-image: url("components/images/church.jpg");
   background-size: cover;
-  display: table; }
+  display: table;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh; }
 
 #aboutUsJumboText {
   margin-left: 27vw;
@@ -273,7 +348,10 @@ body {
 #ourWorkJumbo {
   background-image: url("components/images/mill.jpg");
   background-size: cover;
-  display: table; }
+  display: table;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh; }
 
 #ourWorkJumboText {
   margin-left: 27vw;
@@ -299,7 +377,10 @@ body {
 #servicesJumbo {
   background-image: url("components/images/garden.jpg");
   background-size: cover;
-  display: table; }
+  display: table;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh; }
 
 #servicesJumboText {
   margin-left: 27vw;

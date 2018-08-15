@@ -43,8 +43,8 @@ export default ()=>{
           <h2>Designed by Monica Biehl & Jason Rosso</h2>
           <h2> Developed by Jason Rosso</h2>
           <div className='footerLogo'>
-          <img src={mango} className='logo'  />
-          <h4>M A N G O</h4>
+            <img src={mango} className='logo'  />
+            <h4>M A N G O</h4>
           </div>
           <p>©2018</p>
         </div>

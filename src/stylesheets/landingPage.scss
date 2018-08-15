@@ -37,6 +37,7 @@
   @include jumboCreater('components/images/docks.jpg');
   background-attachment: fixed;
   background-position: top;
+  height: 100vh;
 }
 
 #jumbotronText{

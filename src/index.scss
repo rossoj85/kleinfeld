@@ -14,35 +14,6 @@ body {
   // margin-top: 91px;
 }
 
-//extentions and mixins
-// %jumboDimensions{
-//   width: 100%;
-//   height: 80vh;
-// } 
-
-// @mixin jumboCreater($photoURL){
-//   @extend %jumboDimensions;
-//   background-image: url($photoURL);
-//   background-size: cover;
-// }
-// @mixin jumboText($color, $position:null){
-//   margin-left: 27vw;
-//   margin: 0px;
-//   @if($position!=null){
-//     position: $position
-//   }
-//     @else{
-//       position: relative
-//     }
-  
-//   top: 60px;
-//   z-index: 99;
-//   color: $color;
-//   font-weight: bold;
-//   background: rgba($color: #000000, $alpha: 1)
-// }
-
-
 %jumboDimensions{
   width: 100%;
   height: 80vh;
@@ -53,6 +24,10 @@ body {
   background-image: url($photoURL);
   background-size: cover;
   display: table;
+  //parallax effect
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh;
 }
 @mixin jumboText($color, $position:null){
   margin-left: 27vw;
@@ -83,12 +58,14 @@ body {
 }
 
 @import 'stylesheets/navbar.scss';
+@import 'stylesheets/splash.scss';
 @import 'stylesheets/landingPage.scss';
 @import 'stylesheets/footer.scss';
 @import 'stylesheets/aboutUs.scss';
 @import 'stylesheets/ourWork.scss';
 @import 'stylesheets/services.scss';
 @import 'stylesheets/contact.scss';
+@import 'stylesheets/parallaxTest.scss';
 
 
 

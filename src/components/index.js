@@ -5,3 +5,5 @@ export {default as AboutUs} from './aboutUs';
 export {default as OurWork} from './ourWork';
 export {default as Services} from './services';
 export {default as Contact} from './contact';
+export {default as Splash} from './splash';
+export {default as ParallaxTest} from './parallaxTest.js';

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import './App.css';
 import { Route, Switch, Fade } from 'react-router-dom';
-import {LandingPage, Navbar, Footer, AboutUs, OurWork, Services, Contact} from './components'
+import {LandingPage, Navbar, Footer, AboutUs, OurWork, Services, Contact, ParallaxTest} from './components'
 
 class App extends Component {
   constructor(props){
@@ -39,16 +39,20 @@ class App extends Component {
     return (
       <div className="root">
         <Navbar language={this.state.language} changeLanguage={this.changeLanguage}/>
-        <div id='innerBody'>
+        <Route exact path='/' render={landingPageFunc} />
+        <Switch>
+          <Route exact path='/parallax' render={ParallaxTest} />
+        </Switch>
+        {/*<div id='innerBody'>
         <Switch>
         <Route exact path='/' render={landingPageFunc} />
         <Route exact path='/about' render={()=> <AboutUs language={this.state.language} />} />
         <Route exact path='/ourWork' render={()=> <OurWork language={this.state.language} />} />
         <Route exact path='/services' render={()=> <Services language={this.state.language} />} />
         <Route exact path='/contact' render={()=> <Contact language={this.state.language} />} />
-        </Switch>
+    </Switch>
         </div>
-    
+    */}
         <Footer />
       </div>
     );
