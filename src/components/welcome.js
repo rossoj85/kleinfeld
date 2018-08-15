@@ -17,9 +17,10 @@ export default class Welcome extends Component{
       }
     
     componentDidMount(){
+        console.log('INSIDE COMPONENT MOUNT!!')
         setTimeout(()=>{
             this.setState({textClass: ['splashTextFadeOut']})
-            console.log('TIMEOUT SET!!!!')
+            
         },1000)
         setTimeout(()=>{
             this.setState({logoClass:[' ']})
@@ -32,7 +33,7 @@ export default class Welcome extends Component{
         },5500)
         setTimeout(()=>{
             this.setState({divClass: ['fadeOut']})
-            console.log('TIMEOUT SET!!!!')
+            
         },6300)
     }
     render(){
