@@ -119,22 +119,34 @@ body {
   color: transparent; }
 
 #splashLogo {
-  background: white;
-  color: black;
+  color: transparent;
   display: inline-block;
   margin-top: -180px; }
-  #splashLogo .logo {
+  #splashLogo img {
     height: 200px;
-    width: 200px;
-    opacity: 1; }
+    width: 200px; }
   #splashLogo h1 {
     font-size: 50px; }
+
+.hiddenLogo {
+  background: transparent;
+  color: transparent; }
+  .hiddenLogo img {
+    opacity: 0; }
+
+.fadeInLogo {
+  transition: all 1s linear;
+  color: black;
+  background: white; }
+  .fadeInLogo img {
+    transition: opacity 1s linear;
+    opacity: 1; }
 
 .noDisplay {
   display: none; }
 
-.fadeLogo {
-  transition: all  2s linear;
+.fadeOutLogo {
+  transition: all  .7s linear;
   opacity: 0;
   color: transparent; }
 
@@ -170,6 +182,9 @@ body {
   background-image: url("components/images/docks.jpg");
   background-size: cover;
   display: table;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh;
   background-attachment: fixed;
   background-position: top;
   height: 100vh; }
@@ -282,7 +297,10 @@ body {
 #aboutJumbo {
   background-image: url("components/images/church.jpg");
   background-size: cover;
-  display: table; }
+  display: table;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh; }
 
 #aboutUsJumboText {
   margin-left: 27vw;
@@ -330,7 +348,10 @@ body {
 #ourWorkJumbo {
   background-image: url("components/images/mill.jpg");
   background-size: cover;
-  display: table; }
+  display: table;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh; }
 
 #ourWorkJumboText {
   margin-left: 27vw;
@@ -356,7 +377,10 @@ body {
 #servicesJumbo {
   background-image: url("components/images/garden.jpg");
   background-size: cover;
-  display: table; }
+  display: table;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh; }
 
 #servicesJumboText {
   margin-left: 27vw;

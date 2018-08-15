@@ -41,27 +41,43 @@
 
 
 #splashLogo{
-    
-    background: white;
-    color: black;
+    // background: transparent;
+    color: transparent;
     display: inline-block;
     margin-top: -180px;
-    .logo{
+    // opacity: 0;
+    img{
         height: 200px;
         width: 200px;
-        opacity: 1;
     }
     h1{
         font-size: 50px;
     }
+}
+.hiddenLogo{
+    background: transparent;
+    color: transparent;
+    img{
+        opacity:0
+    }
+}
+.fadeInLogo{
+    transition: all 1s linear;
+    color: black;
+    background: white;
+    img{
+        transition: opacity 1s linear;
+        opacity:1
+    }
+    
 }
 .noDisplay{
     display: none;
     
 }
 
-.fadeLogo{
-    transition: all  2s linear;
+.fadeOutLogo{
+    transition: all  .7s linear;
     opacity: 0;
     color: transparent;
 }

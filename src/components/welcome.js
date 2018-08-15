@@ -10,11 +10,9 @@ export default class Welcome extends Component{
     constructor(props){
         super(props);
           this.state ={
-            //   whiteBackGround: true,
-            //   showLogo: false 
             divClass: ['beginSplash'],
             textClass: [],
-            logoClass:['noDisplay']
+            logoClass:['hiddenLogo']
           }
       }
     
@@ -27,28 +25,22 @@ export default class Welcome extends Component{
             this.setState({logoClass:[' ']})
         },3000)
         setTimeout(()=>{
-            this.setState({logoClass:['fadeLogo']})
+            this.setState({logoClass:['fadeInLogo']})
         },4000)
-
+        setTimeout(()=>{
+            this.setState({logoClass:['fadeOutLogo']})
+        },5500)
         setTimeout(()=>{
             this.setState({divClass: ['fadeOut']})
             console.log('TIMEOUT SET!!!!')
-        },6000)
-        // console.log('INSIDE MOUNT FUNCTION')
+        },6300)
     }
     render(){
         let language= this.props.language
-        // setTimeout(this.alertFunc, 3000)
         console.log('RENDERED!!!!!')
         console.log(this.state)   
         return(
-            // this.state.whiteBackGround ? 
-            // <div style={{
-            // 'height':'100vh', 
-            // 'backgroundColor': 'white' }}>
-            //     <h1>THE BACKGORUND IS WHITE </h1>
-            // </div>
-            // :
+
             <ScrollableAnchor id={'splash'}>
                 <div>
                     <Splash divClass={this.state.divClass}
@@ -95,7 +87,7 @@ export default class Welcome extends Component{
                     <div className='textBox'>
                         {
                         language==='eng' ?
-                        <h1>
+                        <h2>
                         Your Brand is more than a logo or a business, your Brand has a story to tell, 
                         an unforgettable experience to create and the opportunity to see your product or service 
                         as a need that your audience wants to live.
@@ -103,9 +95,9 @@ export default class Welcome extends Component{
                         <br />
                         Through a solid strategy of digital marketing, consulting, analysis
                         design, execution, and tracibility we implement or strengthen your online marketing campaigns.
-                        </h1>
+                        </h2>
                         :
-                        <h1>
+                        <h2>
                         El poder de una marca está en las historias que puede contar, en las experiencias que
                         construye, en la manera como se queda en la mente y corazón de sus audiencias, creando
                         identidad y apropiación de los productos o servicios.  
@@ -114,43 +106,52 @@ export default class Welcome extends Component{
                         Implementamos y fortalecemos los canales digitales, a través de una sólida estrategia de
                         mercadeo digital fundamentada en la consultoría, análisis, diseño, ejecución y mecanismos de
                         medición que permiten llevar trazabilidad y efectividad.
-                        </h1>
+                        </h2>
                         }
-                    </div>
 
-                    <div id='columns'className='clearfix'>
+                        <div id='columns'className='clearfix'>
                         <div className='centered col-sm-12 col-md-4 '>
-                            <h2><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h2>
+                            <h1><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h1>
                         { language==='eng' ?
-                            <h4>Consulting, Development and Administration</h4>
+                            <h3>Consulting, Development and Administration</h3>
                             :
-                            <h4>Consultoría, desarrollo y
-                            administración</h4>
+                            <h3>Consultoría, desarrollo y
+                            administración</h3>
                             }
                         </div>
 
                         <div className='centered col-sm-12 col-md-4 '>
-                            <h2><span className="glyphicon glyphicon-comment"></span>Be + <br/>Social</h2>
+                            <h1><span className="glyphicon glyphicon-comment"></span>Be + <br/>Social</h1>
                             { language==='eng' ?
-                            <h4> Social Networking Strategies and Online Presence</h4>
+                            <h3> Social Networking Strategies and Online Presence</h3>
                             :
-                            <h4>Estrategia de redes
+                            <h3>Estrategia de redes
                             sociales y Publicidad
-                            Online</h4>
+                            Online</h3>
                             }
                         </div>
 
                         <div className='centered col-sm-12 col-md-4 '>
-                            <h2><span className='glyphicon glyphicon-bullhorn'></span>Be + <br/>Adds<br/></h2>
+                            <h1><span className='glyphicon glyphicon-bullhorn'></span>Be + <br/>Adds<br/></h1>
                             { language==='eng' ?
-                            <h4>Branding, Marketing Strategies and Events</h4>
+                            <h3>Branding, Marketing Strategies and Events</h3>
                             :
-                            <h4>Branding, Estrategia de
+                            <h3>Branding, Estrategia de
                             Mercadeo relacional,
-                            Eventos</h4>
+                            Eventos</h3>
                             }
                         </div>
                     </div>
+
+
+
+
+
+
+
+                    </div>
+
+    
                 </div>
             </ScrollableAnchor>
         );
