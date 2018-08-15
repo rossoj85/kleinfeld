@@ -3,35 +3,44 @@ import { Carousel, Jumbotron } from 'react-bootstrap';
 import docks from './images/docks.jpg';
 import LA from './images/la.jpg';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Splash from './splash'
 
-export default class Splash extends Component{
+export default class Welcome extends Component{
 
     constructor(props){
         super(props);
           this.state ={
-              whiteBackGround: true,
-              showLogo: false 
+            //   whiteBackGround: true,
+            //   showLogo: false 
+            divClass: ['beginSplash'],
+            textClass: [],
+            logoClass:['noDisplay']
           }
-        // this.alertFunc = this.alertFunc.bind(this)
       }
-    // alertFunc(){
-    //     // alert('hello')
-    //     this.setState({
-    //         whiteBackGround:false
-    //     })
-    // }
+    
     componentDidMount(){
-        // setTimeout(()=>this.setState({
-        //     whiteBackGround:false,
-        //     showLogo: false
-        // }), 5000)
+        setTimeout(()=>{
+            this.setState({textClass: ['splashTextFadeOut']})
+            console.log('TIMEOUT SET!!!!')
+        },1000)
+        setTimeout(()=>{
+            this.setState({logoClass:[' ']})
+        },3000)
+        setTimeout(()=>{
+            this.setState({logoClass:['fadeLogo']})
+        },4000)
 
-        setTimeout(()=>this.setState({showLogo:true}),2000)
+        setTimeout(()=>{
+            this.setState({divClass: ['fadeOut']})
+            console.log('TIMEOUT SET!!!!')
+        },6000)
+        // console.log('INSIDE MOUNT FUNCTION')
     }
     render(){
         let language= this.props.language
         // setTimeout(this.alertFunc, 3000)
-        console.log('RENDERED!!!!!')   
+        console.log('RENDERED!!!!!')
+        console.log(this.state)   
         return(
             // this.state.whiteBackGround ? 
             // <div style={{
@@ -41,10 +50,10 @@ export default class Splash extends Component{
             // </div>
             // :
             <ScrollableAnchor id={'splash'}>
-
-
-            
                 <div>
+                    <Splash divClass={this.state.divClass}
+                            textClass={this.state.textClass}
+                            logoClass={this.state.logoClass}/>
                     <Jumbotron id='welcomeJumbo'  >
                         <div  id='ourWorkJumboText' className=' jumboTextBlack'>
                             { language==='eng' ?

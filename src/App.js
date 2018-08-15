@@ -39,16 +39,17 @@ class App extends Component {
     return (
       <div className="root">
         <Navbar language={this.state.language} changeLanguage={this.changeLanguage}/>
-        <div id='innerBody'>
+        <Route exact path='/' render={landingPageFunc} />
+        {/*<div id='innerBody'>
         <Switch>
         <Route exact path='/' render={landingPageFunc} />
         <Route exact path='/about' render={()=> <AboutUs language={this.state.language} />} />
         <Route exact path='/ourWork' render={()=> <OurWork language={this.state.language} />} />
         <Route exact path='/services' render={()=> <Services language={this.state.language} />} />
         <Route exact path='/contact' render={()=> <Contact language={this.state.language} />} />
-        </Switch>
+    </Switch>
         </div>
-    
+    */}
         <Footer />
       </div>
     );
