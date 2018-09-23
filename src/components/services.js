@@ -32,15 +32,13 @@ export default (props)=>{
                         language==='eng' ?
                         <div>
                             <h2>
-                                K-Digital, K-Social and K-Adds, are part of our value offer, a way
-                                to look and approach audiences from different fronts, with the purpose
-                                to drive the business strategy of each of our clients, because without
-                                import the size of them, there is something clear, be and be part of the era
-                                digital, rather than a necessity, means being responsible, timely, accurate and
-                                expressive, requires to devise and strengthen the personality of the brand, the connection with
-                                your audiences, understand the way users today search within all
-                                the existing possibilities (reviews, influencers, SEO, among others) the best
-                                option.
+                                K-Digital, K-Social and K-Adds, are part of our value offer; a way
+                                to look at and approach your audiences from different fronts. Our purpose is to
+                                to drive your business's strategy. Regardless of your business's size, one thing is clear:
+                                having a digital presence in this day and age is a necessity, not a luxury. Having a strong, up-to-date, 
+                                and expressive digital marketing campaign allows you to have a better connection with your 
+                                clients and customers, we will ensure that your business is using the right strategies and channels to ensure that 
+                                your campaign is solid and effective. 
                             </h2>
                         </div>
                         :
@@ -65,18 +63,17 @@ export default (props)=>{
                                 {language==='eng'?
                                     <div>
                                         <h3>
-                                        We design and manage your website, as one of the great platforms for the presentation of
-                                        portfolio, accessibility, information and development of your company.
+                                        We design and manage your websites and/or web-apps, transforming them into sleek and accessible 
+                                        platforms for the presentation your company and projection of its image.
                                         <br/>
                                         <br/>
-                                        To make it effective and efficient, we work on building the hand of our clients,
-                                        we identify the necessary keywords or meta tags that will be used when making use of SEO,
-                                        the results will give us the insights that will allow us to potentiate the strategy to reach
-                                        audiences in the right way, create tools that are more than informative, interactive and
-                                        facilitate access to the products and services offered by each company.
+                                        We work hands-on with our clients to insure your company ranks high in searchs that are releveant and will drive
+                                        business to your location. We will work closely with to to gain insight necessary to reach potential clients and audiences
+                                        in the right wat and creat tools for your busineess that are informative interactive and will facilitate access to the products 
+                                        and servies you offer. 
                                         <br/>
                                         <br/>
-                                        This offer is made up of the following cycles:
+                                        We offer the following:
                                         </h3>
                                         <div id='digitalServiceCols'>
                                             <div className='dsCol col-sm-12 col-md-4'>

@@ -40,13 +40,13 @@ export default ()=>{
                 </a>
               </li>
             </ul>
-          <h2>Designed by Monica Biehl & Jason Rosso</h2>
-          <h2> Developed by Jason Rosso</h2>
+          <h2>Designed & Developed by  Jason Rosso</h2>
+          
           <div className='footerLogo'>
             <img src={kLogo} className='logo'  />
             <h4>KLEINFELD</h4>
           </div>
-          <p>©2018</p>
+          <p>© Kleinfeld Advisors LLC 2018</p>
         </div>
     )
 }

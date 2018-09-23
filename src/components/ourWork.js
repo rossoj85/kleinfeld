@@ -35,7 +35,7 @@ export default (props)=>{
                         language==='eng' ?
                         <div>
                             <h2>
-                            We exist thanks to the brands that trust us, the same ones that allow us to continue growing together.
+                            We exist thanks to the brands that trust us and allow us to continue growing together.
                             <br />
                             <br />
                             We have a strong, motivated, intercultural team that thinks big and uses its inspiration 
