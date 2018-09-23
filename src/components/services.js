@@ -159,7 +159,7 @@ export default (props)=>{
                                 {language==='eng'?
                                     <div>
                                         <h3>    
-                                            We design and implement the use of social networks as a tool to generate website traffic and new customers 
+                                            Design and implementation of social networks as a tool to generate website traffic and new customers 
                                             to your business. We create and cultivate your business's image through content which create engagement and communities
                                             around your brand.
                                         </h3>

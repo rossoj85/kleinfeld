@@ -59,7 +59,7 @@ export default (props)=>{
                     }
                 </div>
 
-                <div id='aboutProfiles' >
+                {/*<div id='aboutProfiles' >
                 {
                     profiles.map(profile=>(
                         <div className="card col-sm-6 col-md-6 col-lg-4">
@@ -83,8 +83,9 @@ export default (props)=>{
                     </div>
                     ))
                 }
-                
+            
                 </div>
+            */}
             </div>
         </ScrollableAnchor>
     )
