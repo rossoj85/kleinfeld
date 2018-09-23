@@ -1,5 +1,5 @@
 import React from 'react';
-import mango from './images/mango.png'
+import kLogo from './images/kLogo.png'
 
 
 export default (props)=>{
@@ -9,8 +9,8 @@ export default (props)=>{
             <div id='splashText'>
                 <h1 className={props.textClass.join(' ')}>Your Brand Has a Story To Tell...</h1>
                 <div id='splashLogo' className={props.logoClass.join(' ')}>
-                    <img src={mango}   />
-                    <h1 className={props.logoClass.join(' ')}>M A N G O</h1>
+                    <img src={kLogo}   />
+                    <h2 className={props.logoClass.join(' ')}>K L E I N F E L D &nbsp; &nbsp; A D V I S O R S</h2>
                 </div>
             </div>
         </div>

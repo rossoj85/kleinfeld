@@ -32,7 +32,7 @@ export default (props)=>{
                         language==='eng' ?
                         <div>
                             <h2>
-                                Be + Digital, Be + Social and Adds, are part of our value offer, a way
+                                K-Digital, K-Social and K-Adds, are part of our value offer, a way
                                 to look and approach audiences from different fronts, with the purpose
                                 to drive the business strategy of each of our clients, because without
                                 import the size of them, there is something clear, be and be part of the era
@@ -46,7 +46,7 @@ export default (props)=>{
                         :
                         <div>
                             <h2>
-                            Be+ Digital, Be+ Social y Adds, hacen parte de nuestra oferta de valor, una manera
+                            K-Digital, K-Social y K-Adds, hacen parte de nuestra oferta de valor, una manera
                             de mirar y acercarnos a las audiencias desde diferentes frentes, con el propósito
                             de impulsar la estrategia de negocio de cada uno de nuestros clientes, porque sin
                             importar el tamaño de los mismos, hay algo claro, estar y hacer parte de la era
@@ -61,7 +61,7 @@ export default (props)=>{
                 
                     <div id='serviceDescriptions'>
                         <div className='serviceEntry'>
-                            <h1><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h1>
+                            <h1><span className="glyphicon glyphicon-phone"></span>K-Digital</h1>
                                 {language==='eng'?
                                     <div>
                                         <h3>
@@ -158,7 +158,7 @@ export default (props)=>{
                                 }
                         </div>
                         <div className='serviceEntry' >
-                            <h1><span className="glyphicon glyphicon-comment"></span>Be + <br/>Social</h1>
+                            <h1><span className="glyphicon glyphicon-comment"></span>K-Social</h1>
                                 {language==='eng'?
                                     <div>
                                         <h3>    
@@ -227,7 +227,7 @@ export default (props)=>{
                                 }
                         </div>
                         <div className='serviceEntry'>
-                            <h1><span className='glyphicon glyphicon-bullhorn'></span>Be + <br/>Adds<br/></h1>
+                            <h1><span className='glyphicon glyphicon-bullhorn'></span>K-Adds<br/></h1>
                                 {language==='eng'?
                                     <div>
                                         <h3>

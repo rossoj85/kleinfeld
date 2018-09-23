@@ -62,29 +62,6 @@ export default class Welcome extends Component{
                     </Jumbotron>
 
 
-
-                    {/*<div id='jumbotronText' className='col-lg-6 col-md-6'>
-                        { language==='eng' ?
-                        <div>
-                            <h1>Welcome</h1>
-
-                        </div>
-                        :
-                        <div>
-                            <h1>Beinvenidos</h1>
-                        </div>
-                        }
-                    </div>
-                    <Carousel>
-                    <Carousel.Item>
-                        <img id='carImg' src={docks} />
-                    </Carousel.Item>
-                    
-                    <Carousel.Item>
-                        <img id='carImg' src={LA}/>
-                    </Carousel.Item>
-                    </Carousel>*/}
-
                     <div className='textBox'>
                         {
                         language==='eng' ?
@@ -112,7 +89,7 @@ export default class Welcome extends Component{
 
                         <div id='columns'className='clearfix'>
                         <div className='centered col-sm-12 col-md-4 '>
-                            <h1><span className="glyphicon glyphicon-phone"></span>Be + <br/>Digital</h1>
+                            <h1><span className="glyphicon glyphicon-phone"></span>K-Digital</h1>
                         { language==='eng' ?
                             <h3>Consulting, Development and Administration</h3>
                             :
@@ -122,7 +99,7 @@ export default class Welcome extends Component{
                         </div>
 
                         <div className='centered col-sm-12 col-md-4 '>
-                            <h1><span className="glyphicon glyphicon-comment"></span>Be + <br/>Social</h1>
+                            <h1><span className="glyphicon glyphicon-comment"></span>K-Social</h1>
                             { language==='eng' ?
                             <h3> Social Networking Strategies and Online Presence</h3>
                             :
@@ -133,7 +110,7 @@ export default class Welcome extends Component{
                         </div>
 
                         <div className='centered col-sm-12 col-md-4 '>
-                            <h1><span className='glyphicon glyphicon-bullhorn'></span>Be + <br/>Adds<br/></h1>
+                            <h1><span className='glyphicon glyphicon-bullhorn'></span>K-Adds<br/></h1>
                             { language==='eng' ?
                             <h3>Branding, Marketing Strategies and Events</h3>
                             :

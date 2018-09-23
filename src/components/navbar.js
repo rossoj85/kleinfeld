@@ -2,8 +2,8 @@ import React from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Button} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 import { configureAnchors } from 'react-scrollable-anchor';
-import mango from './images/mango.png';
-
+import kLogo from './images/kLogo.png';
+//
 
 export default (props)=>{
     console.log('inside')
@@ -18,8 +18,8 @@ export default (props)=>{
       {/*<LinkContainer to='/'><a>Be<small>+</small></a></LinkContainer>*/}
       <LinkContainer to='/'> 
         <div id='logoContainer'>
-          <img className='logo' src={mango} />
-          <h4>TEST</h4>  
+          <img className='logo' src={kLogo} />
+          <h4> L E I N F E L D</h4>  
         </div>
       </LinkContainer>
     </Navbar.Brand>

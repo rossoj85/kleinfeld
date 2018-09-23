@@ -5,13 +5,13 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import Ikea from './images/logos/ikeaLogo.jpg'
 import Lexus from  './images/logos/lexusLogo.png'
 import Pepsi from   './images/logos/pepsiLogo.png'        
-
+import kellerW from './images/logos/kellerW.jpg'
 
 export default (props)=>{
     let language = props.language
     console.log('ourWork props', props)
 
-    const logos=[Lexus, Pepsi, Ikea]
+    const logos=[kellerW]
 
     return(
         <ScrollableAnchor id={'ourWork'} >

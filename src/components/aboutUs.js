@@ -33,26 +33,26 @@ export default (props)=>{
                     {
                     language==='eng' ?
                     <h2>
-                    Mango is a marketing agency that builds brick-by-brick, creating new images and business
+                    Kleinfeld Advisors is a marketing agency that builds brick-by-brick, creating new images and business
                     for small and medium-sized enterprises through stories, creative audiovisual content 
                     and interactive analysis of data.
                     <br/>
                     <br/>
                     We collect the necessary insights that allow us to get closer and reach
-                    to the desired audience in the right way and at the right time. Mango creates
+                    to the desired audience in the right way and at the right time. Kleinfeld Advisors creates
                     solid and lasting communities around products and services, giving them shape, 
                     life and feeling to what each brand wants to show.
                     
                     </h2>
                     :
                     <h2>
-                    Mango es una agencia de mercadeo que construye con cada marca, crea un nuevo
+                    Kleinfeld Advisors es una agencia de mercadeo que construye con cada marca, crea un nuevo
                     estilo de vida y de negocio para audiencias de pequeñas y medianas empresas, a
                     través de historias, recursos creativos, visuales, audiovisuales, interactivos y del
                     análisis de datos.
                     <br />
                     <br />
-                    En Mango recopilamos los insights necesarios que nos permiten acercarnos y llegar
+                    En Kleinfeld Advisors recopilamos los insights necesarios que nos permiten acercarnos y llegar
                     a las audiencias deseadas, de la forma correcta y en el momento adecuado, creando
                     comunidades sólidas y duraderas, dándole forma, vida y sentimiento a lo que cada
                     marca quiere mostrar.
