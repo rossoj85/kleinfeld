@@ -159,10 +159,9 @@ export default (props)=>{
                                 {language==='eng'?
                                     <div>
                                         <h3>    
-                                            Design and administration of social networks as a tool that contributes to the generation of
-                                            website traffic, the way a trend is created, stories are constructed by means of
-                                            audiovisual material (videos, photographs, infographics), which allow communities to be created and engagement
-                                            with the brand.
+                                            We design and implement the use of social networks as a tool to generate website traffic and new customers 
+                                            to your business. We create and cultivate your business's image through content which create engagement and communities
+                                            around your brand.
                                         </h3>
                                         <div id='digitalServiceCols' className='clearFix'>
                                             <div className='dsCol col-sm-12 col-md-6'>
@@ -228,9 +227,8 @@ export default (props)=>{
                                 {language==='eng'?
                                     <div>
                                         <h3>
-                                            We offer complementary services to the brand, strategic alternatives of
-                                            branding and content for one or more languages, which can be materialized,
-                                            inclusive, outside of the digital plane.
+                                            We offer complementary services to your company, strategic alternatives of
+                                            branding and content for one or more languages, both digitally and in print. 
                                         </h3>
                                         <div id='digitalServiceCols' className='clearFix'>
                                             <div className='dsCol col-sm-12 col-md-6'>

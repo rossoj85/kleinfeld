@@ -8,9 +8,8 @@ export default (props)=>{
     let language = props.language
     console.log('Hello from aboutUs', props)
     const profiles = [
-        {name: 'Mike', title: 'Account Manager' , education: 'Harvard University' , },
-        {name: 'Monica' , title: 'Marketing and Creative Director' , education: 'Harvard University' , },
-        {name: 'Jason', title: 'Design and Development' , education:'Northeasern University', }
+        {name: 'Jason', title: 'Design and Development' , education:'Northeasern University',education2: 'Fullstack Academy of Code' },
+        {name: 'Gregory', title: 'Client Services', education: 'Pace University', education2: 'null'}
     ]
     return(
         <ScrollableAnchor id={'about'}>
@@ -40,8 +39,8 @@ export default (props)=>{
                     <br/>
                     We collect the necessary insights that allow us to get closer and reach
                     to the desired audience in the right way and at the right time. Kleinfeld Advisors creates
-                    solid and lasting communities around products and services, giving them shape, 
-                    life and feeling to what each brand wants to show.
+                    solid and lasting communities around products and services, giving shape, 
+                    life and feeling to the image each brand wants to create.
                     
                     </h2>
                     :
@@ -68,6 +67,12 @@ export default (props)=>{
                             <h1>{profile.name}</h1>
                             <p className="title">{profile.title}</p>
                             <p>{profile.education}</p>
+                            {
+                                profile.education2 ? 
+                                <p>{profile.education2}</p>
+                                :
+                                null
+                            }
                             <div style={{margin: "24px 0"}}>
                                 <a href="#"><i className="fa fa-dribbble"></i></a> 
                                 <a href="#"><i className="fa fa-twitter"></i></a>  
